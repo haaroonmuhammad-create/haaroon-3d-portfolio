@@ -1,0 +1,226 @@
+export type Project = {
+  slug: string;
+  title: string;
+  category: 'Functional Products' | 'Electronics' | 'Everyday Products' | 'Prototypes';
+  image: string;
+  model: string;
+  eyebrow: string;
+  short: string;
+  story: string;
+  context: string;
+  role: string;
+  process: string[];
+  tags: string[];
+  learning?: string;
+  featured?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    slug: 'pocket-organizer',
+    title: 'Pocket Organizer',
+    category: 'Functional Products',
+    image: '/images/projects/pocket-organizer.png',
+    model: '/models/pocket-organizer.stl',
+    eyebrow: 'Internship · Company Order',
+    short: 'A functional tool organizer created from a real company requirement during my Union Software internship.',
+    story: 'The required tool dimensions were supplied to me and I built the organizer from scratch in FreeCAD. I then exported the design as an STL and moved it into Bambu Studio as part of the additive-manufacturing workflow.',
+    context: 'Real company-order work completed during my 3D design internship at Union Software.',
+    role: 'Modelled the full product from scratch and prepared the final STL for slicing.',
+    process: ['Requirement', 'FreeCAD modelling', 'STL export', 'Bambu Studio'],
+    tags: ['FreeCAD', 'Bambu Studio', 'Functional Design', 'Internship'],
+    learning: 'A functional product can also be aesthetically considered—the two goals can support each other.',
+    featured: true,
+  },
+  {
+    slug: 'esp32-enclosure',
+    title: 'ESP32 Enclosure',
+    category: 'Electronics',
+    image: '/images/projects/esp32-enclosure.png',
+    model: '/models/esp32-enclosure.stl',
+    eyebrow: 'Electronics Product Design',
+    short: 'An enclosure study that connects my ECE background with practical product and prototype design.',
+    story: 'This project explores how an embedded-electronics concept can be translated into a protective physical product while keeping the overall form clean and practical.',
+    context: 'A portfolio project that combines electronics awareness with 3D product design.',
+    role: 'Developed the enclosure form and prepared it as a viewable, downloadable STL model.',
+    process: ['Electronics use case', 'Enclosure concept', '3D model', 'STL preparation'],
+    tags: ['ESP32', 'Enclosure', 'ECE', 'Prototype'],
+    learning: 'Electronics enclosures need to communicate both protection and usability through their form.',
+    featured: true,
+  },
+  {
+    slug: 'mounting-bracket',
+    title: 'Mounting Bracket',
+    category: 'Functional Products',
+    image: '/images/projects/mounting-bracket.png',
+    model: '/models/mounting-bracket.stl',
+    eyebrow: 'Functional Design · Blender',
+    short: 'A bracket concept created in Blender to explore mechanical-looking geometry and product-oriented modelling.',
+    story: 'I created this bracket in Blender as a functional design exercise. It was not developed from precision engineering measurements; the goal was to practice turning a practical idea into a clean 3D form.',
+    context: 'Functional modelling exercise focused on shape, usability and presentation.',
+    role: 'Created the model in Blender and exported the design as an STL.',
+    process: ['Functional idea', 'Blender modelling', 'Form refinement', 'STL export'],
+    tags: ['Blender', 'Bracket', 'Functional', 'STL'],
+    learning: 'Functional geometry can still look deliberate and visually balanced.',
+    featured: true,
+  },
+  {
+    slug: 'mounting-clamp',
+    title: 'Mounting Clamp',
+    category: 'Prototypes',
+    image: '/images/projects/mounting-clamp.png',
+    model: '/models/mounting-clamp.stl',
+    eyebrow: 'Functional Prototype',
+    short: 'A compact mounting-clamp concept focused on purposeful geometry and physical usability.',
+    story: 'The clamp is part of my functional modelling practice, where I moved beyond purely decorative objects and concentrated on shapes that communicate a clear mechanical purpose.',
+    context: 'Prototype-oriented design exploration.',
+    role: 'Developed the 3D form and prepared the model as an STL.',
+    process: ['Use case', 'Form development', '3D model', 'STL'],
+    tags: ['Clamp', 'Functional', 'Prototype', 'STL'],
+    learning: 'A simple mechanical idea becomes clearer when every feature has an obvious visual purpose.',
+    featured: true,
+  },
+  {
+    slug: 'mobile-stand',
+    title: 'Mobile Stand',
+    category: 'Everyday Products',
+    image: '/images/projects/mobile-stand.png',
+    model: '/models/mobile-stand.stl',
+    eyebrow: 'Consumer Product Concept',
+    short: 'An everyday product concept exploring support geometry, phone placement and a clean silhouette.',
+    story: 'This model explores how a small everyday product can solve a clear physical use case with relatively simple geometry and a visually clean form.',
+    context: 'Consumer-product design exploration.',
+    role: 'Created the stand model and prepared the STL for review.',
+    process: ['Product idea', 'Support form', '3D model', 'STL'],
+    tags: ['Product Design', 'Mobile Stand', 'Everyday Product'],
+    learning: 'Simple products benefit from restraint—fewer forms can make the intended use more obvious.',
+    featured: true,
+  },
+  {
+    slug: 'kitchen-organizer',
+    title: 'Kitchen Organizer',
+    category: 'Everyday Products',
+    image: '/images/projects/kitchen-organizer.png',
+    model: '/models/kitchen-organizer.stl',
+    eyebrow: 'Utility Product',
+    short: 'A compact organizer concept exploring compartment planning and practical everyday storage.',
+    story: 'This utility-focused model helped me think about how internal compartments, openings and overall product form work together for daily use.',
+    context: 'Everyday product and storage-layout exploration.',
+    role: 'Created the organizer form and exported the STL.',
+    process: ['Storage use case', 'Compartment layout', '3D model', 'STL'],
+    tags: ['Organizer', 'Utility', 'Product Design'],
+    learning: 'Internal layout is just as important as the exterior when designing an organizer.',
+    featured: true,
+  },
+  {
+    slug: 'phone-stand',
+    title: 'Phone Stand',
+    category: 'Everyday Products',
+    image: '/images/projects/phone-stand.png',
+    model: '/models/phone-stand.stl',
+    eyebrow: 'Design Exploration',
+    short: 'A second device-stand study exploring a different support structure and front-retention detail.',
+    story: 'A compact product-form exercise used to explore another way of supporting a phone while keeping the object visually simple.',
+    context: 'Personal product-design exploration.',
+    role: 'Created and prepared the 3D model as an STL.',
+    process: ['Concept', 'Support geometry', '3D model', 'STL'],
+    tags: ['Phone Stand', 'Product', 'STL'],
+  },
+  {
+    slug: 'flat-bracket',
+    title: 'Narva Flat Bracket',
+    category: 'Prototypes',
+    image: '/images/projects/flat-bracket.png',
+    model: '/models/flat-bracket.stl',
+    eyebrow: 'Mechanical Exploration',
+    short: 'A flat bracket study that expands my practice with simple mechanical and mounting forms.',
+    story: 'This model is part of my continuing practice in turning straightforward mechanical ideas into clear printable geometry.',
+    context: 'Mechanical-form design study.',
+    role: 'Prepared the bracket model as a downloadable STL.',
+    process: ['Mechanical idea', '3D model', 'STL'],
+    tags: ['Bracket', 'Mechanical', 'Prototype'],
+  },
+  {
+    slug: 'cup',
+    title: 'Cup',
+    category: 'Everyday Products',
+    image: '/images/projects/cup.png',
+    model: '/models/cup.stl',
+    eyebrow: 'Form Study',
+    short: 'A familiar object used to practice curved geometry, hollow form and clean product modelling.',
+    story: 'This simple cup model helped me practice the fundamentals of modelling recognizable everyday objects and preparing them as printable meshes.',
+    context: 'Basic product-form modelling practice.',
+    role: 'Created the 3D form and exported it as an STL.',
+    process: ['Form reference', '3D modelling', 'STL'],
+    tags: ['Cup', 'Form Study', 'STL'],
+  },
+  {
+    slug: 'pen-stand',
+    title: 'Pen Stand',
+    category: 'Everyday Products',
+    image: '/images/projects/pen-stand.png',
+    model: '/models/pen-stand.stl',
+    eyebrow: 'Desktop Utility',
+    short: 'A compact desktop organizer developed as an everyday utility-product study.',
+    story: 'A small storage model focused on straightforward usability, internal divisions and print-ready geometry.',
+    context: 'Desktop product-design practice.',
+    role: 'Developed the organizer model and exported the STL.',
+    process: ['Use case', 'Compartment form', '3D model', 'STL'],
+    tags: ['Desktop', 'Organizer', 'Utility'],
+  },
+  {
+    slug: 'soap-holder',
+    title: 'Soap Holder',
+    category: 'Everyday Products',
+    image: '/images/projects/soap-holder.png',
+    model: '/models/soap-holder.stl',
+    eyebrow: 'Household Product',
+    short: 'A household product concept exploring an open patterned surface within a compact rounded frame.',
+    story: 'This model continues my exploration of useful everyday objects and how patterned geometry can add both function and visual interest.',
+    context: 'Household product-design exploration.',
+    role: 'Created the model and prepared the STL for viewing and download.',
+    process: ['Use case', 'Patterned surface', '3D model', 'STL'],
+    tags: ['Household', 'Pattern', 'Product Design'],
+  },
+];
+
+export const skills = {
+  core: [
+    ['Blender', 'Intermediate'],
+    ['FreeCAD', 'Intermediate'],
+    ['Tinkercad', 'Intermediate'],
+    ['Bambu Studio', 'Intermediate'],
+  ],
+  learning: [
+    ['Autodesk Fusion', 'Beginner · Developing'],
+    ['AutoCAD', 'Beginner · Developing'],
+  ],
+  familiar: ['Onshape', 'Inkscape'],
+  workflow: ['STL preparation', 'Slicing', 'Support preparation', 'FDM workflow', 'PLA print preparation', 'Rapid prototyping', 'DfAM'],
+};
+
+export const credentials = [
+  { title: 'Union Software · Internship', meta: '3D Designing & 3D Printing · Jul–Aug 2026', image: '/images/certificates/union-software.png' },
+  { title: 'ShivPrema Industries · Internship', meta: '3D Printing Technology · Jun 2026', image: '/images/certificates/shivprema.png' },
+  { title: 'NPTEL Elite · Introduction to Internet of Things', meta: '78% · Jul–Oct 2025 · IIT Kharagpur / NPTEL', image: '/images/certificates/nptel-iot.png' },
+  { title: 'ICIMICC ’26 · Paper Presentation', meta: 'IoT-Enabled Water Quality Monitoring System with Predictive Maintenance · Apr 2026', image: '/images/certificates/icimicc-26.png' },
+  { title: 'Altium Education · PCB Basic Design Course', meta: 'Certificate of Completion · Dec 2025', image: '/images/certificates/altium-pcb.png' },
+  { title: 'Cisco · Introduction to Modern AI', meta: 'Cisco Networking Academy · Dec 2025', image: '/images/certificates/cisco-ai.png' },
+  { title: 'Cisco · Security and Connectivity Support', meta: 'Cisco Networking Academy · Dec 2025', image: '/images/certificates/cisco-security.png' },
+  { title: 'SPANGLES ’26 · Tech Connections', meta: '29th National Level Symposium · Feb 2026', image: '/images/certificates/spangles-26.png' },
+];
+
+export const achievements = [
+  { year: '2026', title: 'Paper Presentation · ICIMICC ’26', description: 'Presented “Design and Implementation of an IoT-Enabled Water Quality Monitoring System with Predictive Maintenance.”' },
+  { year: '2026', title: 'Event Head · Pragyotsav 2026', description: 'Led the Paper Presentation event for around 30 participants across approximately 10–12 teams.' },
+  { year: '2026', title: 'SPANGLES ’26', description: 'Participated in “Tech Connections” at the 29th National Level Symposium.' },
+  { year: '2025', title: 'Paper Presentation · Pragyotsav 2025', description: 'Presented “Aircraft Splitup Mechanism” at Easwari Engineering College.' },
+  { year: '2025', title: '2nd Prize · Technical Quiz', description: 'Won 2nd Prize at Quintessence ’25, Easwari Engineering College.' },
+  { year: '2025', title: 'Tamil Nadu Exclusive Hackathon', description: 'Participated in the internal round of Bit N Build Around the World.' },
+];
+
+export const engineeringProjects = [
+  { title: 'Audio Amplifier', meta: 'MOSFET-based academic project' },
+  { title: 'Automatic Light Controller', meta: 'LDR sensor-based academic project' },
+  { title: 'Surveillance Robot', meta: 'ESP32 Camera Module · software contribution' },
+];
